@@ -1,8 +1,7 @@
 import Navbar from "./Navbar"
-import WeatherApp from "./components/WeatherInformation/index"
 import { Route, Routes } from "react-router-dom"
-import HomePage from "./components/Home"
-import YoutubeApp from "./components/YouTubeVideoAnalytics/ytDataAnalytics"
+import SearchVideos from "./components/YouTubeVideoAnalytics/searchVideos"
+import MostPopular from "./components/YouTubeVideoAnalytics/mostPopular"
 
 function App() {
   return (
@@ -10,9 +9,9 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/weather_app" element={<WeatherApp />} />
-          <Route path="/youtube_statistics" element={<YoutubeApp />} />
+          <Route path="/" element={<SearchVideos />} />
+          <Route path="/youtube_search" element={<SearchVideos />} />
+          <Route path="/youtube_popular_today" element={<MostPopular />} />
         </Routes>
       </div>
     </>

@@ -7,8 +7,8 @@ export default function Navbar() {
         Home
       </Link>
       <ul>
-        <CustomLink to="/weather_app">Weather app</CustomLink>
-        <CustomLink to="/youtube_statistics">YouTube statistics</CustomLink>
+        <CustomLink to="/youtube_search">Search Videos</CustomLink>
+        <CustomLink to="/youtube_popular_today">Popular Videos by Region</CustomLink>
       </ul>
     </nav>
   );
