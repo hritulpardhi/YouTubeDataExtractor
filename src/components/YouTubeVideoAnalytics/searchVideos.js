@@ -21,7 +21,7 @@ import moment from "moment";
 import "../../../src/styles.css";
 
 const SearchVideos = () => {
-  const YOUTUBE_API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY
+  const YOUTUBE_API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
   const [modalVisible, setModalVisible] = useState(false);
   const [iFrameContent, setiFrameContent] = useState("");
   const [dataSource, setData] = useState(null);
@@ -61,7 +61,9 @@ const SearchVideos = () => {
     setiFrameContent(VideoData?.items[0]?.player?.embedHtml);
     setThumbnailData(VideoData?.items[0]?.snippet?.thumbnails);
     setYtTags(VideoData?.items[0]?.snippet?.tags);
-    setPublishedAt(moment(VideoData?.items[0]?.snippet?.publishedAt).format("lll"));
+    setPublishedAt(
+      moment(VideoData?.items[0]?.snippet?.publishedAt).format("lll")
+    );
     setModalVisible(true);
     setIsLoading(false);
   };
@@ -95,7 +97,9 @@ const SearchVideos = () => {
     setIsLoading(true);
     try {
       const response = await fetch(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=5&q=${searchKeyword}&pageToken=${pageToken ? pageToken : ""}&key=${YOUTUBE_API_KEY}`
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=5&q=${searchKeyword}&pageToken=${
+          pageToken ? pageToken : ""
+        }&key=${YOUTUBE_API_KEY}`
       );
       if (!response.ok) {
         const jsonResponse = await response.json();
@@ -213,7 +217,9 @@ const SearchVideos = () => {
             <Form.Item
               name="video_title"
               label="Search by title"
-              rules={[{ required: true, message: "Please enter a search keyword!" }]}
+              rules={[
+                { required: true, message: "Please enter a search keyword!" },
+              ]}
             >
               <Input placeholder="Input video title" />
             </Form.Item>
@@ -271,7 +277,9 @@ const SearchVideos = () => {
                 Video Title :{" "}
                 <Input
                   value={ytTitle}
-                  addonAfter={<CopyOutlined onClick={() => handleCopy(ytTitle)} />}
+                  addonAfter={
+                    <CopyOutlined onClick={() => handleCopy(ytTitle)} />
+                  }
                 />
                 Video Description :{" "}
                 <CopyOutlined onClick={() => handleCopy(ytDescription)} />
@@ -279,7 +287,9 @@ const SearchVideos = () => {
                 Video Tags :
                 <Input
                   value={ytTags}
-                  addonAfter={<CopyOutlined onClick={() => handleCopy(ytTags)} />}
+                  addonAfter={
+                    <CopyOutlined onClick={() => handleCopy(ytTags)} />
+                  }
                 />
                 <Divider />
                 Download Thumbnail :<br />
@@ -302,7 +312,9 @@ const SearchVideos = () => {
               </div>
             </Card>
           </Modal>
-          {messageVisible && <div className="message-container">Copied to clipboard</div>}
+          {messageVisible && (
+            <div className="message-container">Copied to clipboard</div>
+          )}
         </div>
       </Spin>
     </div>
