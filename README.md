@@ -1,6 +1,4 @@
-Certainly! Here's a complete example of a README.md file formatted with Markdown syntax for your YouTube Data Extractor project:
 
-```markdown
 # YouTube Data Extractor
 
 This project fetches video details from YouTube using YouTube's API. Users can search for videos, retrieve details such as video titles, descriptions, tags, and thumbnails, and fetch popular videos based on their selected country. The application is built with React and provides an interactive UI for users to explore YouTube content efficiently.
@@ -82,4 +80,3 @@ This project was bootstrapped with Create React App.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-```
