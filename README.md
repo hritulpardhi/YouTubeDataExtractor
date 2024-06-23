@@ -17,6 +17,7 @@ This project fetches video details from YouTube using YouTube's API. Users can s
 - Node.js
 - npm (Node Package Manager)
 - API Key to be generated from YouTube and need to be updated in .env file.
+- Link for reference - https://developers.google.com/youtube/v3/getting-started
 
 ### Installation
 
