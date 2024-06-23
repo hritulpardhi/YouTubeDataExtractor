@@ -64,23 +64,23 @@ To learn more about React and Create React App, check out the following resource
 
 ## Screenshots
 
-![Search Video]
+[Search Video]
 ![image](https://github.com/hritulpardhi/YouTubeDataExtractor/assets/166939863/5d2d8889-5fe6-4d18-b385-8b41b1d240c4)
 *Search Video*
 
-![Search Video : Results]
+[Search Video : Results]
 ![image](https://github.com/hritulpardhi/YouTubeDataExtractor/assets/166939863/347f41ea-6000-450f-a98c-31564640347b)
 *Get the video results*
 
-![View Video Details Modal]
+[View Video Details Modal]
 ![image](https://github.com/hritulpardhi/YouTubeDataExtractor/assets/166939863/097b041d-beff-47e8-82fd-1d30655bc746)
 *View Video Details Modal, you can play the video here as well as copy the description and other stuff at just a click, download thumbnails as well as per the resolution you want.*
 
-![Popular Videos by Country]
+[Popular Videos by Country]
 ![image](https://github.com/hritulpardhi/YouTubeDataExtractor/assets/166939863/4fbe5c0c-dbcc-4689-831d-639c80fe8c14)
 *Popular Videos by Country*
 
-![Popular Videos by Country : Results]
+[Popular Videos by Country : Results]
 ![image](https://github.com/hritulpardhi/YouTubeDataExtractor/assets/166939863/ee82fc79-21b0-4b5b-b06a-33528288bfed)
 *Get the popular video by country results*
 
@@ -90,4 +90,4 @@ This project was bootstrapped with Create React App.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License(![LICENSE](https://github.com/hritulpardhi/YouTubeDataExtractor/blob/1e5ce41b2c1d51763731e719cf0795d767e31798/LICENSE)) - see the LICENSE file for details.
