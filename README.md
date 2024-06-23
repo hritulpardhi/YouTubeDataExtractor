@@ -90,4 +90,4 @@ This project was bootstrapped with Create React App.
 
 ## License
 
-This project is licensed under the MIT License(![LICENSE](https://github.com/hritulpardhi/YouTubeDataExtractor/blob/1e5ce41b2c1d51763731e719cf0795d767e31798/LICENSE)) - see the LICENSE file for details.
+This project is licensed under the MIT License([LICENSE](https://github.com/hritulpardhi/YouTubeDataExtractor/blob/1e5ce41b2c1d51763731e719cf0795d767e31798/LICENSE)) - see the LICENSE file for details.
